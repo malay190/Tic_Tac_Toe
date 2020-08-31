@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (player1Turn) {
             ((Button) v).setText("X");
+            ((Button) v).setTextColor(Color.RED);
         } else {
             ((Button) v).setText("O");
         }
